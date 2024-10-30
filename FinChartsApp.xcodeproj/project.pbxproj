@@ -20,6 +20,9 @@
 		E9A947892CD27BDA002D6B43 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A947882CD27BDA002D6B43 /* AuthService.swift */; };
 		E9A9478C2CD27CA4002D6B43 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A9478B2CD27CA4002D6B43 /* KeychainService.swift */; };
 		E9A9478F2CD27D10002D6B43 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A9478E2CD27D10002D6B43 /* AuthResponse.swift */; };
+		E9A947922CD27F0B002D6B43 /* MarketDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A947912CD27F0B002D6B43 /* MarketDataService.swift */; };
+		E9A947942CD27F21002D6B43 /* HistoricalDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A947932CD27F21002D6B43 /* HistoricalDataResponse.swift */; };
+		E9A947962CD27F71002D6B43 /* AssetsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A947952CD27F71002D6B43 /* AssetsResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		E9A947882CD27BDA002D6B43 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		E9A9478B2CD27CA4002D6B43 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 		E9A9478E2CD27D10002D6B43 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		E9A947912CD27F0B002D6B43 /* MarketDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataService.swift; sourceTree = "<group>"; };
+		E9A947932CD27F21002D6B43 /* HistoricalDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalDataResponse.swift; sourceTree = "<group>"; };
+		E9A947952CD27F71002D6B43 /* AssetsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,7 @@
 		E9A947792CD279D7002D6B43 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				E9A947902CD27EF3002D6B43 /* MarketDataService */,
 				E9A9478D2CD27D03002D6B43 /* Models */,
 				E9A947872CD27B79002D6B43 /* Authorization */,
 				E9A947862CD27AB9002D6B43 /* Common */,
@@ -137,9 +144,19 @@
 		E9A9478D2CD27D03002D6B43 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E9A947952CD27F71002D6B43 /* AssetsResponse.swift */,
 				E9A9478E2CD27D10002D6B43 /* AuthResponse.swift */,
+				E9A947932CD27F21002D6B43 /* HistoricalDataResponse.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E9A947902CD27EF3002D6B43 /* MarketDataService */ = {
+			isa = PBXGroup;
+			children = (
+				E9A947912CD27F0B002D6B43 /* MarketDataService.swift */,
+			);
+			path = MarketDataService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,12 +230,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9A9476D2CD27711002D6B43 /* ContentView.swift in Sources */,
+				E9A947942CD27F21002D6B43 /* HistoricalDataResponse.swift in Sources */,
 				E9A947832CD27A54002D6B43 /* NetworkError.swift in Sources */,
 				E9A9476B2CD27711002D6B43 /* FinChartsAppApp.swift in Sources */,
 				E9A9478C2CD27CA4002D6B43 /* KeychainService.swift in Sources */,
 				E9A947892CD27BDA002D6B43 /* AuthService.swift in Sources */,
+				E9A947922CD27F0B002D6B43 /* MarketDataService.swift in Sources */,
 				E9A947852CD27A61002D6B43 /* APIConfiguration.swift in Sources */,
 				E9A947812CD27A46002D6B43 /* HTTPMethod.swift in Sources */,
+				E9A947962CD27F71002D6B43 /* AssetsResponse.swift in Sources */,
 				E9A9477B2CD27A0F002D6B43 /* HTTPClient.swift in Sources */,
 				E9A9478F2CD27D10002D6B43 /* AuthResponse.swift in Sources */,
 				E9A9477D2CD27A1D002D6B43 /* APIEndpoint.swift in Sources */,

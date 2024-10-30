@@ -23,6 +23,7 @@
 		E9A947922CD27F0B002D6B43 /* MarketDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A947912CD27F0B002D6B43 /* MarketDataService.swift */; };
 		E9A947942CD27F21002D6B43 /* HistoricalDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A947932CD27F21002D6B43 /* HistoricalDataResponse.swift */; };
 		E9A947962CD27F71002D6B43 /* AssetsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A947952CD27F71002D6B43 /* AssetsResponse.swift */; };
+		E9A947992CD281D4002D6B43 /* MarketWebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A947982CD281D4002D6B43 /* MarketWebSocketManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		E9A947912CD27F0B002D6B43 /* MarketDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataService.swift; sourceTree = "<group>"; };
 		E9A947932CD27F21002D6B43 /* HistoricalDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalDataResponse.swift; sourceTree = "<group>"; };
 		E9A947952CD27F71002D6B43 /* AssetsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsResponse.swift; sourceTree = "<group>"; };
+		E9A947982CD281D4002D6B43 /* MarketWebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketWebSocketManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		E9A947792CD279D7002D6B43 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				E9A947972CD281B8002D6B43 /* MarketWebSocketManager */,
 				E9A947902CD27EF3002D6B43 /* MarketDataService */,
 				E9A9478D2CD27D03002D6B43 /* Models */,
 				E9A947872CD27B79002D6B43 /* Authorization */,
@@ -157,6 +160,14 @@
 				E9A947912CD27F0B002D6B43 /* MarketDataService.swift */,
 			);
 			path = MarketDataService;
+			sourceTree = "<group>";
+		};
+		E9A947972CD281B8002D6B43 /* MarketWebSocketManager */ = {
+			isa = PBXGroup;
+			children = (
+				E9A947982CD281D4002D6B43 /* MarketWebSocketManager.swift */,
+			);
+			path = MarketWebSocketManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +249,7 @@
 				E9A947922CD27F0B002D6B43 /* MarketDataService.swift in Sources */,
 				E9A947852CD27A61002D6B43 /* APIConfiguration.swift in Sources */,
 				E9A947812CD27A46002D6B43 /* HTTPMethod.swift in Sources */,
+				E9A947992CD281D4002D6B43 /* MarketWebSocketManager.swift in Sources */,
 				E9A947962CD27F71002D6B43 /* AssetsResponse.swift in Sources */,
 				E9A9477B2CD27A0F002D6B43 /* HTTPClient.swift in Sources */,
 				E9A9478F2CD27D10002D6B43 /* AuthResponse.swift in Sources */,

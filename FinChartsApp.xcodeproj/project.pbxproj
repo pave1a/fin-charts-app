@@ -17,6 +17,9 @@
 		E9A947812CD27A46002D6B43 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A947802CD27A46002D6B43 /* HTTPMethod.swift */; };
 		E9A947832CD27A54002D6B43 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A947822CD27A54002D6B43 /* NetworkError.swift */; };
 		E9A947852CD27A61002D6B43 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A947842CD27A61002D6B43 /* APIConfiguration.swift */; };
+		E9A947892CD27BDA002D6B43 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A947882CD27BDA002D6B43 /* AuthService.swift */; };
+		E9A9478C2CD27CA4002D6B43 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A9478B2CD27CA4002D6B43 /* KeychainService.swift */; };
+		E9A9478F2CD27D10002D6B43 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A9478E2CD27D10002D6B43 /* AuthResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		E9A947802CD27A46002D6B43 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		E9A947822CD27A54002D6B43 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		E9A947842CD27A61002D6B43 /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
+		E9A947882CD27BDA002D6B43 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		E9A9478B2CD27CA4002D6B43 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		E9A9478E2CD27D10002D6B43 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,7 @@
 		E9A947782CD279D1002D6B43 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				E9A9478A2CD27C7F002D6B43 /* Keychain */,
 				E9A947792CD279D7002D6B43 /* Networking */,
 			);
 			path = Common;
@@ -91,6 +98,8 @@
 		E9A947792CD279D7002D6B43 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				E9A9478D2CD27D03002D6B43 /* Models */,
+				E9A947872CD27B79002D6B43 /* Authorization */,
 				E9A947862CD27AB9002D6B43 /* Common */,
 			);
 			path = Networking;
@@ -107,6 +116,30 @@
 				E9A947822CD27A54002D6B43 /* NetworkError.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		E9A947872CD27B79002D6B43 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				E9A947882CD27BDA002D6B43 /* AuthService.swift */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		E9A9478A2CD27C7F002D6B43 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				E9A9478B2CD27CA4002D6B43 /* KeychainService.swift */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
+		E9A9478D2CD27D03002D6B43 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E9A9478E2CD27D10002D6B43 /* AuthResponse.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,9 +215,12 @@
 				E9A9476D2CD27711002D6B43 /* ContentView.swift in Sources */,
 				E9A947832CD27A54002D6B43 /* NetworkError.swift in Sources */,
 				E9A9476B2CD27711002D6B43 /* FinChartsAppApp.swift in Sources */,
+				E9A9478C2CD27CA4002D6B43 /* KeychainService.swift in Sources */,
+				E9A947892CD27BDA002D6B43 /* AuthService.swift in Sources */,
 				E9A947852CD27A61002D6B43 /* APIConfiguration.swift in Sources */,
 				E9A947812CD27A46002D6B43 /* HTTPMethod.swift in Sources */,
 				E9A9477B2CD27A0F002D6B43 /* HTTPClient.swift in Sources */,
+				E9A9478F2CD27D10002D6B43 /* AuthResponse.swift in Sources */,
 				E9A9477D2CD27A1D002D6B43 /* APIEndpoint.swift in Sources */,
 				E9A9477F2CD27A33002D6B43 /* Endpoint.swift in Sources */,
 			);
